@@ -1,3 +1,10 @@
-export default function FormateDateBr(arg: string){
+function FormateDate(arg: string){
   return arg.slice(0, 10).split('-').reverse().join('/') + ' às ' + arg.slice(11, 19);
 }
+
+
+// using
+
+const result = FormateDataBr('2021-01-19T18:03:44.381Z');
+
+console.log(result)
